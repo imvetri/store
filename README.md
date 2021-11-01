@@ -4,5 +4,16 @@ A ready to use backend based on JSON. This design works well for applications wh
 ## Getting started
 
 ```
-hello
+// Initialise the store with the configuration
+Store.init(config);
+
+// Allows get, set (create, update), delete operations
+// Creates an item at the end of list if id doesnt exist
+Store.set("assessmentTemplate",{id:"1234-4321-1234"}); 
+Store.get("assessmentTemplate",0)
+
+// Delete
+Store.delete("assessmentTemplate",{id:"1234-4321-1234"})
+
+
 ```
